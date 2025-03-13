@@ -4,44 +4,116 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leiya Conklin - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; text-align: center; }
-        header { background: #333; color: white; padding: 20px; }
-        section { max-width: 800px; margin: 20px auto; padding: 20px; background: white; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-        a { color: #333; text-decoration: none; font-weight: bold; }
-        footer { background: #333; color: white; padding: 10px; position: fixed; bottom: 0; width: 100%; }
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            text-align: center;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(90deg, #333, #555);
+            color: white;
+            padding: 30px 0;
+            font-size: 24px;
+            font-weight: 600;
+        }
+        nav {
+            background: #444;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffcc00;
+        }
+        section {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+        h2 {
+            color: #444;
+            border-bottom: 3px solid #ffcc00;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        a.button {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #ffcc00;
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        a.button:hover {
+            background: #e6b800;
+        }
+        footer {
+            background: #333;
+            color: white;
+            padding: 15px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Leiya Conklin</h1>
+        Leiya Conklin
         <p>IT Professional | Certifications | Projects</p>
     </header>
     
-    <section>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    
+    <section id="about">
         <h2>About Me</h2>
         <p>Welcome to my portfolio! I am an IT professional with a passion for technology, certifications, and projects.</p>
     </section>
     
-    <section>
+    <section id="certifications">
         <h2>Certifications</h2>
         <p>- Google IT Support (In Progress)<br>
            - CompTIA ITF+ (Expected April 2025)<br>
            - AWS Cloud Practitioner (Expected June 2025)</p>
     </section>
     
-    <section>
+    <section id="projects">
         <h2>Projects</h2>
         <p>- Portfolio Website (This Project)<br>
            - Other IT-related projects coming soon</p>
     </section>
     
-    <section>
+    <section id="resume">
         <h2>Resume</h2>
-        <p><a href="Leiya Conklin Resume 2025.pdf" target="_blank">Download My Resume</a></p>
+        <p><a href="Leiya Conklin Resume 2025.pdf" class="button" target="_blank">Download My Resume</a></p>
     </section>
     
-    <section>
+    <section id="contact">
         <h2>Contact</h2>
         <p>Email: leidarie@gmail.com</p>
         <p>LinkedIn: <a href="your-linkedin-profile" target="_blank">My LinkedIn</a></p>
@@ -52,3 +124,5 @@
     </footer>
 </body>
 </html>
+
+
